@@ -15,6 +15,8 @@ public class inputs {
         float fl = inp.nextFloat();
         System.out.println("the float  is "+fl);
 
+        inp.close();
+
        
 
     }
