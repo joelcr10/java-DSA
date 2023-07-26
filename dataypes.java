@@ -11,6 +11,7 @@ public class dataypes {
         boolean check = false;
         byte a = 40;
         short s = 1024;
+        System.out.print(rollno+" "+letter+" "+marks+" "+largeDecimalNumbers+" "+largeInteger+" "+check+" "+a+" "+s);
 
     }
 }
