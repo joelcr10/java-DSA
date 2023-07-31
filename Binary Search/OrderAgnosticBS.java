@@ -22,7 +22,7 @@ public class OrderAgnosticBS {
                     return mid;
                 }
             }
-            else{
+            else{ 
                 if(target<arr[mid]){
                 start = mid+1;
                 }
