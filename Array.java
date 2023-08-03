@@ -1,8 +1,8 @@
 import java.util.Scanner;
-import java.util.numsays;
+import java.util.Arrays;
 
 
-public class numsay {
+public class Array {
     public static void main(String[] args){
         int[] ros = new int[5];
 
@@ -15,43 +15,23 @@ public class numsay {
             System.out.println(ros[i]);
         }
 
-        //enhanced numsays
+        //enhanced Arrays
 
-        for(int num: ros){
-            System.out.println(num);
+        for(int arr: ros){
+            System.out.println(arr);
         }
 
-        System.out.println(numsays.toString(ros));
+        System.out.println(Arrays.toString(ros));
 
         String[] str = new String[5];
         for(int i = 0; i<str.length;i++){
             str[i] = in.next();
         }
 
-        System.out.println(numsays.toString(str));
+        System.out.println(Arrays.toString(str));
 
         in.close();
     }
     
 }
 
-
-if(nums[0]!=nums[1]){
-            return nums[0];
-        }
-        int start = 0;
-        int end = nums.length-1;
-        while(start<=end){
-            int mid = start + (end-start)/2;
-            if(nums[mid]!=nums[mid-1] && nums[mid]!=nums[mid+1]){
-                return nums[mid];
-            }
-            else if((nums[mid]==nums[mid+1] && mid%2!=0) || (nums[mid]==nums[mid-1] && (mid-1)%2!=0)){
-                end = mid -1;
-            }
-            else{
-                start = mid + 1;
-            }
-        }
-
-        return 0;
