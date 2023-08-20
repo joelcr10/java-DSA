@@ -13,7 +13,7 @@ public class Permutation {
 
     static void perm(String processed, String unprocessed){
         if(unprocessed.isEmpty()){
-            System.out.println(processed);
+            System.out.println(processed); 
             return;
         }
 
