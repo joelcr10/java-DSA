@@ -3,9 +3,7 @@ package OOP;
 public class Student {
     public static void main(String[] args) {
         StudentDemo s = new StudentDemo();
-        // s.rno = 1;
-        // s.name = "joel";
-        // s.marks = 99.9f;
+  
         System.out.println(s.rno);
          System.out.println(s.name);
           System.out.println(s.marks);
@@ -18,6 +16,8 @@ public class Student {
 
         StudentDemo random = kunal;
         random.greeting();
+
+        System.out.println(random.population);
     }
 }
 
@@ -26,6 +26,15 @@ class StudentDemo{
     int rno;
     String name;
     float marks;
+    static long population; //static means common to all the objects of the class
+    static int a=4,b;
+
+    //will only run once when the first obj is created
+    static{
+        System.out.println("I am inside static block");
+        b = a*5;
+
+    }
 
     StudentDemo(){
         this(0, "None", 0.0f);
@@ -37,6 +46,7 @@ class StudentDemo{
         this.rno = rno;
         this.name = name;
         this.marks = marks;
+        this.population+=1;
     }
 
     StudentDemo( StudentDemo other){
