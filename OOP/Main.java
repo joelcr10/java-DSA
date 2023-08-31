@@ -3,6 +3,7 @@ package OOP;
 public class Main {
     public static void main(String[] args) {
         Box b1 = new Box();
-        System.out.println(b1.h);
+        Box box5 = new BoxWeigth(2,3,4,5);
+        System.out.println(box5);
     }
 }
